@@ -53,16 +53,16 @@
                                         </thead>
                                         <tbody>
                                             <%
-												int ii = 0;
+						int i = 0;
                                                 String sel2 = "select * from tbl_user where user_status='0'";
                                                 ResultSet rs2 = con.selectCommand(sel2);
                                                 while (rs2.next()) {
 
-                                                    ii++;
+                                                    i++;
 
                                             %>
                                             <tr>
-                                                <td align="center"><%=ii%></td>
+                                                <td align="center"><%=i%></td>
                                                 <td align="center"><%=rs2.getString("user_name")%></td>
                                                 <td align="center"><%=rs2.getString("user_contact")%></td>
                                                 <td align="center"><%=rs2.getString("user_email")%></td>
@@ -89,16 +89,16 @@
                                         </thead>
                                         <tbody>
                                             <%
-												int ii1 = 0;
+						int j = 0;
                                                 String sel21 = "select * from tbl_user where user_status='1'";
                                                 ResultSet rs21 = con.selectCommand(sel21);
                                                 while (rs21.next()) {
 
-                                                    ii1++;
+                                                    j++;
 
                                             %>
                                             <tr>
-                                                <td align="center"><%=ii1%></td>
+                                                <td align="center"><%=j%></td>
                                                 <td align="center"><%=rs21.getString("user_name")%></td>
                                                 <td align="center"><%=rs21.getString("user_contact")%></td>
                                                 <td align="center"><%=rs21.getString("user_email")%></td>

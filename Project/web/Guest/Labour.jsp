@@ -219,7 +219,7 @@
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="password" name="txt_password" title="Minimum eight characters, at least one letter and one number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" class="form-control" id="password" placeholder="Your Password" required data-validation-required-message="Please enter your Password" />
+                                        <input type="password" name="txt_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" id="password" placeholder="Your Password" required data-validation-required-message="Please enter your Password" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>

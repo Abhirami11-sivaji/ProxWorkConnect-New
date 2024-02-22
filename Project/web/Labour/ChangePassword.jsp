@@ -66,12 +66,12 @@ if(request.getParameter("btn_save")!=null)
     <tr>
       <td>Current Password</td>
       <td><label for="txt_password"></label>
-      <input type="text" name="txt_password" id="txt_password" /></td>
+      <input type="text" name="txt_password" id="txt_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /></td>
     </tr>
     <tr>
       <td>New Password</td>
       <td><label for="txt_newpassword"></label>
-      <input type="text" name="txt_newpassword" id="txt_newpassword" /></td>
+      <input type="text" name="txt_newpassword" id="txt_newpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td>
     </tr>
     <tr>
       <td>Re-Password</td>
